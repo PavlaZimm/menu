@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/096e4585d8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> WEB lady </a>
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="fa-solid fa-bars" id="menu-icon"></div>
+
+    </header>
+
+    <section class="home">
+        <div class="home-text">
+            <h5>Webdeveloper</h5>
+            <h1>Wind in<br>The Storms</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, at sunt? Facilis illo error nostrum nulla amet iste, numquam nam similique laudantium dicta ab ullam vel tempora, labore saepe dolorum!
+            </p>
+            <a class="home-btn" href="#">Details</a>
+        </div>
+    </section>
+    <div class="home-icon">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>   
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></i></a>      
+        <a href="#"><i class="fa-brands fa-linkedin"></i></i></i></a>   
+    </div>
+
+    <script >
+        let menu = document.querySelector ('#menu-icon');
+        let navlist = document.querySelector( '.navlist' );
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-xmark');
+            navlist.classList.toggle('open');
+        }
+ 
+    </script>
+
+    
+</body>
+</html>
